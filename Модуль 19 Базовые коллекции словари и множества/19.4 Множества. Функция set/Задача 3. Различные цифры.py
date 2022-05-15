@@ -1,4 +1,4 @@
 string = 'ab1n32kz2'
 
-nums = set(string)
-print('Различные цифры строки:', nums)
+nums = {i for i in string if '0' <= i <= '9'}
+print('Различные цифры строки:', ''.join(nums))
